@@ -8,6 +8,7 @@
   <!-- Shared version number properties -->
 <properties>
     <org.springframework.version>4.2.1.RELEASE</org.springframework.version>
+    <apache.tiles>3.0.5</apache.tiles>
 </properties>	
  
 <dependencies>
@@ -15,6 +16,9 @@
     Core utilities used by other modules.
     Define this if you use Spring Utility APIs (org.springframework.core.*/org.springframework.util.*)
 -->
+
+
+
 <dependency>
   <groupId>org.springframework</groupId>
   <artifactId>spring-core</artifactId>
@@ -155,6 +159,23 @@
   <version>${org.springframework.version}</version>
   <scope>test</scope>
 </dependency>
+	
+	<dependency>
+		<groupId>org.apache.tiles</groupId>
+		<artifactId>tiles-core</artifactId>
+		<version>${apache.tiles}</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.apache.tiles</groupId>
+		<artifactId>tiles-jsp</artifactId>
+		<version>${apache.tiles}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>log4j-over-slf4j</artifactId>
+		<version>1.7.12</version>
+	</dependency>
 </dependencies>
 
   <build>

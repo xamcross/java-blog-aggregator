@@ -8,7 +8,7 @@ public class IndexController {
 
 	@RequestMapping("/huindex")
 	public String index(){
-		return "/WEB-INF/jsp/huinia/huindex.jsp";
+		return "index";
 	}
 	
 }
